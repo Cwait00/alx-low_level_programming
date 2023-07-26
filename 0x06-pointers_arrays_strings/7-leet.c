@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * leet - encode into 1337speak
+ * leet - encode a string  into 1337
  * @n: input value
  * Return: n value
  */
