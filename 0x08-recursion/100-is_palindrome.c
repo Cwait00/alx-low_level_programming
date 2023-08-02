@@ -32,11 +32,10 @@ int compare_string(char *s, int left, int right)
 	return (0);
 }
 /**
- * is palindrome - detect if a string is a palindrome
+ * is_palindrome - detect if a string is a palindrome
  * @s: the string to test
- * Return: 1 if it is a pali...., 0 if not
+ * Return: 1 if it is a palindrome, 0 if not
  */
-
 int is_palindrome(char *s)
 {
 	if (*s == '\0')
