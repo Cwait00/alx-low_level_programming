@@ -22,7 +22,7 @@ char **strtow(char *str)
 	while (str[i])
 	{
 		if (flag == 0 && str[i] != ' ')
-			flag = i;
+			flag = 1;
 		if (i > 0 && str[i] == ' ' && str[i - 1] != ' ')
 		{
 			flag = 0;
