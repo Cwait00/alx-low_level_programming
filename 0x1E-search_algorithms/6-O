@@ -1,0 +1,9 @@
+## Space Complexity Analysis for allocate_map Function
+
+The space complexity of the `allocate_map` function is determined by the memory allocations performed during its execution.
+
+1. **Memory for an array of pointers (`map`):** The function allocates memory for an array of `n` pointers, each pointing to a row. This operation has a space complexity of O(n).
+
+2. **Memory for each row in the 2D array:** Within the loop, memory is allocated for each row of the 2D array. For each of the `n` rows, `m` integers are allocated. This operation has a space complexity of O(n * m).
+
+Considering the dominant factor, the overall space complexity of the `allocate_map` function is O(n + n * m), which simplifies to O(n * m).
