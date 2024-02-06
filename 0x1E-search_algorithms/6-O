@@ -1,9 +1,26 @@
-## Space Complexity Analysis for allocate_map Function
+#include "search_algos.h"
 
-The space complexity of the `allocate_map` function is determined by the memory allocations performed during its execution.
+/**
+ * allocate_map - Allocates memory for a 2D array of integers
+ * @n: Number of rows
+ * @m: Number of columns
+ *
+ * Description:
+ *   This function allocates memory for a 2D array of integers with n rows
+ *   and m columns.
+ *
+ * Return:
+ *   - On success, returns a pointer to the allocated 2D array.
+ *   - On failure, returns NULL.
+ */
+int **allocate_map(int n, int m)
+{
+	int **map;
 
-1. **Memory for an array of pointers (`map`):** The function allocates memory for an array of `n` pointers, each pointing to a row. This operation has a space complexity of O(n).
-
-2. **Memory for each row in the 2D array:** Within the loop, memory is allocated for each row of the 2D array. For each of the `n` rows, `m` integers are allocated. This operation has a space complexity of O(n * m).
-
-Considering the dominant factor, the overall space complexity of the `allocate_map` function is O(n + n * m), which simplifies to O(n * m).
+	map = malloc(sizeof(int *) * n);
+	for (int i = 0; i < n; i++)
+	{
+	map[i] = malloc(sizeof(int) * m);
+	}
+	return map;
+}
