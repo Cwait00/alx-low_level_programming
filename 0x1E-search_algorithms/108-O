@@ -1,5 +1,2 @@
-/*
- * Time Complexity of Jump Search in Skip List:
- * The average case time complexity of a jump search in a skip list of size n,
- * with an express lane using step = sqrt(n), is O(sqrt(n) + log(n)).
- */
+O(sqrt(n))
+O(log(n))
